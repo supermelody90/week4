@@ -10,8 +10,11 @@
     <body>
         <div id="react-app"></div>
         <div id="react-form"></div>
+
+
+
         <center>
-        <form action="/" method="post" enctype="/application/x-www-form-urlencoded">
+        <form action="" method="post" enctype="/application/x-www-form-urlencoded">
             <fieldset>
             <table>
                 <tr>
@@ -19,7 +22,7 @@
                         Title:
                     </td>
                     <td>
-                        <input id="title" type="text" name="" value="Default">
+                        <input id="title" type="text" name="title" value="Default">
                     </td>
                 </tr>
                 <tr>
@@ -27,7 +30,7 @@
                         Release Date:
                     </td>
                     <td>
-                        <input id="releaseDate" type="text" name="" value="Default">
+                        <input id="releaseDate" type="text" name="releaseDate" value="Default">
                     </td>
                 </tr>
                 <tr>
@@ -35,7 +38,7 @@
                         Duration:
                     </td>
                     <td>
-                        <input id="duration" type="text" name="" value="Default">
+                        <input id="duration" type="text" name="duration" value="Default">
                     </td>
                 </tr>
                 <tr>
@@ -43,7 +46,7 @@
                         Genre:
                     </td>
                     <td>
-                        <input id="genre" type="text" name="" value="Default">
+                        <input id="genre" type="text" name="genre" value="Default">
                     </td>
                 </tr>
                 <tr>
@@ -51,13 +54,13 @@
                         Synopsis:
                     </td>
                     <td>
-                        <input id="synopsis" type="text" name="" value="Default">
+                        <input id="synopsis" type="text" name="synopsis" value="Default">
                     </td>
                 </tr>
             </table>
             </fieldset>
             <br />
-            <input type="submit" name="" value="Edit">
+            <input type="submit" id="submit" name="submit" value="Edit">
         </form>
         </center>
 
@@ -86,9 +89,9 @@
                         React.createElement('a', {href: 'mailto:12184735@student.uts.edu.au'}, '12184735@student.uts.edu.au')
                     )
                 )
-        )
+        );
+    ReactDOM.render(rootElement, document.getElementById('react-app'));
 
-    ReactDOM.render(rootElement, document.getElementById('react-app'))
     </script>
 
     <!-- <script src="introduction.js"></script> -->
