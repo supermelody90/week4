@@ -4,7 +4,8 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 var app = express();
 
-app.use(bodyParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
 app.listen(1185, function() {
     console.log('server listening on port 1185');
@@ -16,6 +17,7 @@ app.get('/', function(req, res) {
 
 app.post('/', function(req, res) {
     console.log(req.body);
+    var content = JSON.parse(req.body);
     res.end('Edit Success!');
 })
 
