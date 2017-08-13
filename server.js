@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
 });
 
 app.post('/', function(req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     var jsonData = req.body;
     delete jsonData.submit;
     var jsonString = JSON.stringify(jsonData);
