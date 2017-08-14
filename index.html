@@ -7,18 +7,24 @@
         <script src="https://unpkg.com/react-dom@latest/dist/react-dom.min.js"></script>
         <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!-- <script src="action/edit.js"></script> -->
         <script>
-            $(function() {
+            $().ready(function() {
                 $.ajax({
-		            url: 'http://localhost:8080',
-		            type: 'get',
-		            // dataType: 'json',
-		            success:function(data){
-			            console.log(data.title);
-		            },
-		            error:function(data){
-			            alert(data);
-		            }
+		            // url: 'http://localhost:8080',
+		            // type: 'get',
+		            // // dataType: 'json',
+		            // success:function(data){
+			        //     console.log(data.title);
+		            // },
+		            // error:function(data){
+			        //     alert(data);
+		            // }
+                    // url: 'data.json',
+                    // // async: false,
+                    // success: function(data) {
+                    //     alert(data);
+                    // }
 	            });
             });
         </script>
@@ -79,15 +85,6 @@
             <input type="submit" id="submit" name="submit" value="Edit">
         </form>
         </center>
-
-        <!-- <script type="text/babel">
-            var data = require('data.json');
-            class  myComponent extends React.Component {
-                render() {
-
-                }
-            }
-        </script> -->
 
     </body>
     <script>
